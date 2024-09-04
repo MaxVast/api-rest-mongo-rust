@@ -7,7 +7,6 @@ use serde_json::Value;
 #[allow(non_snake_case)]
 #[derive(Debug, Serialize, Deserialize, ToSchema)]
 pub struct Customer {
-    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
     pub id: Option<ObjectId>,
     pub id_client: u32,
     pub nom: String,
@@ -66,7 +65,7 @@ pub struct Customer {
 #[allow(non_snake_case)]
 #[derive(Debug, Serialize, Deserialize, ToSchema)]
 pub struct Customers {
-    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
+    #[serde(skip_serializing_if = "Option::is_none")]
     pub id: Option<ObjectId>,
     pub id_client: u32,
     pub nom: String,

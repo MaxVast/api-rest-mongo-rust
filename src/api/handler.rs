@@ -1,6 +1,6 @@
 use crate::{
     models::customer::{Customer, Customers, QueryOptions},
-    models::seller_point::{SellerPoint},
+    models::seller_point::SellerPoint,
     api::response::{GenericResponse, SingleCustomerResponse, CustomerData,
     CustomerListResponse, SellerPointListResponse, SellerPointData, SingleSellerPointResponse},
 };

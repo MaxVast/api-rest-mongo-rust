@@ -66,7 +66,7 @@ async fn main() -> std::io::Result<()> {
                     .url("/api-docs/openapi.json", openapi.clone()),
             )
     })
-        .bind(("127.0.0.1", 8000))?
+        .bind(("127.0.0.1", 8001))?
         .run()
         .await
 }
